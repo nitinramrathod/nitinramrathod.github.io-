@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 2s ease;
+}
+body main{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#e26614, #44177b);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+main #container{
+  width: 300px;
+  height: 370px;
+  background: linear-gradient(#8000ff99, #44177b);
+  border-top-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  /* align-items: center; */
+  text-align: center;
+  box-shadow: 2px 2px 6px black;
+}
+main #container .log{
+  width: 100%;
+  height: auto;
+}
+main #container .log h1{
+  font-family: arial;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 10px;
+  margin-bottom: 20px;
+  color: #e26614;
+  text-shadow: 1px 1px 3px black;
+  background-color: #8000ff99;
+  border-top-left-radius: 100px;
+}
+main #container .idpass p{
+  color: white;
+  font-weight: 400;
+  font-family: arial;
+  top-bottom: 17px;
+}
+main #container .idpass input{
+  padding: 8px;
+  margin-top: 10px;
+  width: 85%;
+  background: transparent;
+  border-radius: 30px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+main #container .check{
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  margin-left: 25px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+main #container .check p{
+
+  margin-left: 3px;
+}
+
+main #container button{
+  margin-top: 15px;
+  padding: 10px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  margin: 16px  4px 4px 10px;
+  background: linear-gradient(#e26614, #44177b);
+  transition: all 1s ease;
+  cursor: pointer;
+}
+main #container button:hover{
+  background: linear-gradient(#44177b, #e26614);
+}
+main #container button p{
+  font-size: 17px;
+  font-family: arial;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+
+}
+#container a{
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  float: left;
+  margin-left: 25px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}

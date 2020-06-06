@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* color: green; */
+  transition: all 1s ease;
+
+}
+header{
+  width: 100%;
+  height: 95px;
+  background: #000000c2;
+  color: green;
+}
+header h1{
+  text-align: center;
+  font-size: 50px;
+  color: green;
+  text-shadow: 1px 1px 4px blue;
+  font-weight: 800;
+  font-family: arial;
+  align-items: center;
+}
+
+main h2{
+  text-align: center;
+  font-size:47px;
+  color: #df8fec;
+  text-shadow: 2px 2px 5px black;
+  background: linear-gradient(#cacaca, #bae2ad);
+
+}
+
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext{
+  0%{content:"Youtube"; }
+  20%{content:"Google"; }
+  40%{content:"Facebook"; }
+  70%{content:"Twitter"; }
+  100%{content:"Wikipidia"; }
+}
+
+main #container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(#b8e6ab,#ccb8b8);
+  position: relative;
+transition: all 20s ease;
+animation-name: animate;
+animation-direction:alternate-reverse;
+animation-duration:20s;
+animation-fill-mode:forwards;
+animation-iteration-count:infinite;
+animation-play-state:running;
+animation-timing-function:ease-in-out;
+}
+
+
+@keyframes animate{
+0%{
+background:linear-gradient(#e44040b3, #4848e8ad);
+}20%{
+background:linear-gradient(#d68c1fa1, #5dd7e691);
+}40%{
+background:linear-gradient(#65cc65ab, #ffc0cbcf);
+}60%{
+background:linear-gradient(#ecaef7, #b0273ab3);
+}80%{
+background:linear-gradient(#ecaef7, #d887e6);
+}100%{
+background:linear-gradient(#adf5f7, #8d1ca0c9);
+}
+}
+
+#container .firstrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  margin-top: -90px;
+
+}
+#container .firstrow a{
+  font-size: 30px;
+  margin: 70px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 8px;
+}
+#container .firstrow a:hover{
+  text-shadow: 0px 9px 8px black;
+  font-size: 37px;
+  color: blue;
+  border: 3px solid blue;
+}
+
+#container .secondrow{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  margin-top: 70px;
+
+  }
+#container .secondrow a{
+  margin: 70px;
+  font-size: 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 8px;
+}
+#container .secondrow a:hover{
+  text-shadow: 0px 9px 8px black;
+  font-size: 37px;
+  color: blue;
+  border: 3px solid blue;
+}
+
+
+#container a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+
+footer{
+  width: 100%;
+  height: 100px;
+  background: #000000c2;
+  font-size: 25px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px;
+  align-items: center;
+}

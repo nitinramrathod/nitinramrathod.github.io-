@@ -14,7 +14,7 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: #0000009e;
   color: white;
   font-family: arial;
 }
@@ -32,18 +32,24 @@ header menu a{
   padding: 3px;
   border-radius: 4px;
 }
+header menu .active{
+  background: linear-gradient(purple, skyblue);
+  padding: 7px 8px;
+  border-radius: 5px;
+}
 header menu a:hover{
   background: linear-gradient(purple, skyblue);
-  padding: 6px;
+  padding: 7px 8px;
   border-radius: 5px;
 }
 body #top{
   width: 100%;
-  height: 80vh;
+  height: 100%;
   display: block;
-  margin-top: 24vh;
+  margin-top: 10%;
   align-items: center;
   text-align: center;
+  margin-bottom: 10%;
 }
 header .logo h1{
   font-size: 60px;
@@ -116,75 +122,123 @@ header .logo h1:hover{
   border-radius: 20px;
   padding: 20px;
 }
-
-body main .parent{
+main .profile{
+  width: 100%;
+  height: 300px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-body main .parent .para{
-  width: 45%;
-  margin-right: 2%;
-}
-body main .parent .para h3{
-  text-align: center;
-  font-size: 30px;
-   margin-bottom: 20px;
-}
-body main .parent .para p{
-  padding: 1%;
-  font-size: 17px;
+  justify-content: center;
   font-family: arial;
+}
+ main .profile .nitin-1{
+   display: flex;
+   justify-content: center;
+   width: 80%;
+   background: linear-gradient(deeppink, skyblue);
+   height: 270px;
+   padding-top: 40px;
+   border-top-left-radius: 50px;
+   border-bottom-right-radius: 50px;
+   box-shadow: 1px 1px 6px black;
+ }
+ main .profile .nitin-1 .photo img{
+   width: 200px;
+   height: 200px;
+   border-top-left-radius: 50px;
+   border-bottom-right-radius: 50px;
+   margin-left: 5px;
+ }
+main .profile .nitin-1 .detail{
+  margin-left: 10px;
+}
+main .profile .nitin-1 .detail h3{
+  padding-bottom: 20px;
+  font-size: 27px;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+main .profile .nitin-1 .detail p{
+  font-weight: 800;
+  font-size: 20px;
+}
+main .profile .nitin-1 .detail .mo-no{
+  font-size: 18px;
+  font-weight: 600;
+  color: green;
+}
+main .profile .nitin-1 .detail p a{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 7px;
+  color: white;
+  background: linear-gradient(lightgreen,green);
+  border-radius: 15px;
+}
+main .Knowledge{
+  width: 100%;
+  height:auto;
+  display: flex;
+  justify-content: center;
+  font-family: arial;
+}
+main .Knowledge .Knowledge-data{
+  margin-top: 60px;
+  width: 90%;
+  height: auto;
+  background-color: #584c98;
+  color: white;
   text-align: left;
-  font-weight: bold;
-  word-spacing: 2px;
-}
-body main .parent .square{
-  width: 50%;
-  margin-top: 10px;
-}
-body main .parent .square .square-a{
-  margin-left: 10%;
-  width: 70%;
-  height: 350px;
-  border: solid 1px black;
-  margin-top: 10px;
-  text-align: center;
-}
-body main .parent .square .square-a p{
-  font-size: 17px;
-  color: black;
-  font-family: arial;
-  font-weight: bolder;
-    margin: 5px;
-}
-body main .parent .square .square-b{
-  width: 70%;
-  margin-left: 10%;
-  height: 350px;
+  overflow: hidden;
+  box-shadow: 2px 2px 6px black;
   border: 1px solid black;
-  margin-top: 40px;
-  text-align: center;
 }
-body main .parent .square .square-b p{
-  font-size: 17px;
-  color: black;
-  font-family: arial;
-  font-weight: bolder;
-  margin: 5px;
+main .Knowledge .Knowledge-data h2{
+  text-align: center;
+  padding: 10px;
+  background: blue;
+  font-size: 30px;
+  font-weight: 700;
+
+}
+main .Knowledge .Knowledge-data h3{
+  font-size: 28px;
+  letter-spacing: 2px;
+  background: skyblue;
+  color: purple;
+  padding: 4px;
+  margin: 0 0 10px 0;
+  width: 50%;
+}
+main .Knowledge .Knowledge-data p{
+  font-size: 15px;
+  padding: 10px;
 }
 body footer{
   width: 100%;
   height: 88px;
   text-align: center;
-  background-color: black;
+  background-color: #0000009e;
   color: white;
   font-family: arial;
   margin-top: 10px;
 }
+body footer p{
+  padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ntin djfkj jnfkjsndkj jnkjnkjn dskjfdkjvk kfkjnj kjndkjnkjnk kjnk nkjnvunfk nkjnkjnmn */
 
 /* media qury start from there */
-@media (max-width: 700px){
+/* @media (max-width: 900px){
 
   body{
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3));
@@ -362,4 +416,4 @@ body main .parent .square .square-b p{
 
 
 
-}
+} */

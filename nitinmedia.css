@@ -1,0 +1,365 @@
+*{
+  margin: 0; padding: 0;
+  transition: all 1s ease;
+}
+body{
+  background: linear-gradient(#b38eb9, #0dcee6);
+  width: 100%;
+  height: auto;
+  transition: all 1s ease;
+}
+header{
+  width: 100%;
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: arial;
+}
+header .logo, menu{
+  margin-right: 30px;
+  margin-left: 30px;
+}
+header menu a{
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 900;
+  font-family: arial;
+  background: linear-gradient(skyblue, purple);
+  padding: 3px;
+  border-radius: 4px;
+}
+header menu a:hover{
+  background: linear-gradient(purple, skyblue);
+  padding: 6px;
+  border-radius: 5px;
+}
+body #top{
+  width: 100%;
+  height: 80vh;
+  display: block;
+  margin-top: 24vh;
+  align-items: center;
+  text-align: center;
+}
+header .logo h1{
+  font-size: 60px;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 5px gray;
+  color: blue;
+  transition: all 1s ease;
+}
+header .logo h1:hover{
+  font-size: 65px;
+  letter-spacing: 8px;
+  text-shadow: 2px 2px 5px blue;
+  color: green;
+}
+#top h3{
+  font-size: 35px;
+  font-weight: 700;
+  color: #063d56;
+  text-shadow: 7px 4px 9px #3F51B5;
+    letter-spacing: 2px;
+}
+#top h2{
+  font-family: arial;
+  font-size: 80px;
+  font-weight: 700;
+  color: #6d0a7d;
+  text-shadow: 7px 6px 5px #3F51B5;
+  padding-top: 10px;
+}
+#top p{
+  font-size: 30px;
+  font-weight: bolder;
+  color: #35088c;
+  text-shadow: 6px 5px 14px #0b214e;
+  letter-spacing: 2px;
+}
+#top .btn-1{
+  margin-top: 70px;
+}
+#top .btn-1 a{
+  font-family: arial;
+  text-decoration: none;
+  font-size: 38px;
+  color: white;
+  font-weight: bolder;
+}
+#top .btn-1 .sign-in{
+  background-color: #551261;
+  color:white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-right: 10px;
+}
+#top .btn-1 .log-in:hover{
+  background-color: #551261;
+  color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+#top .btn-1 .log-in{
+  background-color: white;
+  color:black;
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 10px;
+}
+#top .btn-1 .sign-in:hover{
+  background-color: white;
+  color:black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+body main .parent{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body main .parent .para{
+  width: 45%;
+  margin-right: 2%;
+}
+body main .parent .para h3{
+  text-align: center;
+  font-size: 30px;
+   margin-bottom: 20px;
+}
+body main .parent .para p{
+  padding: 1%;
+  font-size: 17px;
+  font-family: arial;
+  text-align: left;
+  font-weight: bold;
+  word-spacing: 2px;
+}
+body main .parent .square{
+  width: 50%;
+  margin-top: 10px;
+}
+body main .parent .square .square-a{
+  margin-left: 10%;
+  width: 70%;
+  height: 350px;
+  border: solid 1px black;
+  margin-top: 10px;
+  text-align: center;
+}
+body main .parent .square .square-a p{
+  font-size: 17px;
+  color: black;
+  font-family: arial;
+  font-weight: bolder;
+    margin: 5px;
+}
+body main .parent .square .square-b{
+  width: 70%;
+  margin-left: 10%;
+  height: 350px;
+  border: 1px solid black;
+  margin-top: 40px;
+  text-align: center;
+}
+body main .parent .square .square-b p{
+  font-size: 17px;
+  color: black;
+  font-family: arial;
+  font-weight: bolder;
+  margin: 5px;
+}
+body footer{
+  width: 100%;
+  height: 88px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: arial;
+  margin-top: 10px;
+}
+
+/* media qury start from there */
+@media (max-width: 700px){
+
+  body{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    width: 100%;
+    height: auto;
+  }
+
+ header{
+   align-items: center;
+   justify-content: center;
+ }
+  header .logo h1{
+    font-size: 70px;
+    color: blue;
+}
+header menu a{
+  display: none;
+}
+#top .btn-1{
+  display: block;
+  align-items: center;
+}
+body #top{
+  width: 100%;
+  height: 70vh;
+  display: block;
+  margin-top: 24vh;
+  align-items: center;
+  text-align: center;
+}
+body main .parent{
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+}
+body main .parent .para{
+  width: 96%;
+  margin-right: 2%;
+  margin-left: 2%;
+  text-align:
+
+}
+body main .parent .para h3{
+  text-align: center;
+  font-size: 35px;
+   margin-bottom: 20px;
+}
+body main .parent .para p{
+  padding: 1%;
+  font-size: 20px;
+  font-family: arial;
+  text-align: left;
+  font-weight: bold;
+  word-spacing: 2px;
+  text-align: center;
+}
+
+body main .parent .square{
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+}
+body main .parent .square .square-a{
+  margin: 5%;
+  width: 90%;
+  height: auto;
+  border: solid 2px black;
+  margin-top: 10px;
+  text-align: center;
+  background: linear-gradient(white, blue)
+}
+body main .parent .square .square-a p{
+  font-size: 20px;
+  color: black;
+  font-family: arial;
+  font-weight: bolder;
+    margin: 5px;
+}
+body main .parent .square .square-b{
+  width: 90%;
+  margin: 5%;
+  height: auto;
+  border: 2px solid black;
+  margin-top: 40px;
+  text-align: center;
+    background: linear-gradient(white, blue)
+}
+body main .parent .square .square-b p{
+  font-size: 20px;
+  color: black;
+  font-family: arial;
+  font-weight: bolder;
+  margin: 5px;
+}
+
+
+
+#top h3{
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+  text-shadow: 1px 1px 3px white;
+    letter-spacing: 2px;
+}
+#top h2{
+  font-family: arial;
+  font-size: 45px;
+  font-weight: 700;
+  color: red;
+  text-shadow: 3px 3px 6px black;
+  padding-top: 10px;
+}
+#top p{
+  font-size: 21px;
+  font-weight: 900;
+  color: blue;
+  text-shadow: 1px 1px 3px green;
+  letter-spacing: 2px;
+}
+#top .btn-1{
+  margin-top: 70px;
+}
+#top .btn-1 a{
+  font-family: arial;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+}
+#top .btn-1 .sign-in{
+  background-color: black;
+  color:white;
+  border-radius: 20px;
+  padding: 10px;
+}
+#top .btn-1 .log-in{
+  background-color: blue;
+  color:black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
